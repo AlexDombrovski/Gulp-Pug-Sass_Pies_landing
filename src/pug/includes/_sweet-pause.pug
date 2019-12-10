@@ -1,0 +1,7 @@
+.container-fluid.pies-wrapper
+  .container.pies-cont
+    h2.pies-title(class="wow fadeInRightBig" data-wow-delay="0.1s") #{swPause}
+    .pies-cards
+      - powerPies.length = 4;
+      each item in sweetPause
+        +item-card(item.img, item.name, item.structure, item.price, item.weight)

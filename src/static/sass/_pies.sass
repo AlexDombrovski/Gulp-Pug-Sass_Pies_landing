@@ -1,0 +1,113 @@
+.pies-wrapper
+  background-color: #936147
+  height: min-content
+
+.pies-cont
+  padding: 50px 0
+
+.pies-title
+  font-family: 'Roboto Mono', monospace
+  color: #fce9b5
+  font-size: 30px
+  line-height: normal
+  margin-bottom: 30px
+
+.pies-cards, .pies-cards-second
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+
+.pies-cards-hidden
+  display: none
+  
+
+.item-card-box
+  display: flex
+  flex-direction: column
+  width: 250px
+  height: 450px
+  background-color: #ffffff
+  border-radius: 10px
+  margin: 10px 0
+
+.item-img
+  width: inherit
+  height: 167px
+  background-color: #fce9b5
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
+
+.item-description
+  height: inherit
+  display: flex
+  padding: 10px
+  flex-direction: column
+  justify-content: space-around
+
+.item-name
+  font-family: 'Roboto Mono', monospace
+  color: #936147
+  font-size: 18px
+  font-weight: 700
+  line-height: normal
+
+.item-structure
+  font-family: 'Roboto Mono', monospace
+  color: #936147
+  font-size: 14px
+  font-weight: 400
+  line-height: normal
+  padding: 5px 0
+
+.block-price
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+
+.item-price
+  font-family: 'Roboto Mono', monospace
+  color: #936147
+  font-size: 30px
+  font-weight: 700
+  line-height: normal
+
+.item-weight
+  font-family: 'Roboto Mono', monospace
+  color: #bab9b8
+  font-size: 14px
+  font-weight: 400
+  line-height: normal
+
+.show-more, .show-more-second
+  font-family: 'Roboto Mono', monospace
+  color: #ffffff
+  font-size: 16px
+  font-weight: 400
+  line-height: normal
+  margin-top: 30px
+  cursor: pointer
+  text-align: right
+  text-decoration: underline
+
+.show-more-hidden, .show-more-second-hidden
+  display: none
+
+
+
+
+@media (max-width: 575.98px)
+  .pies-title
+    text-align: center
+
+  .pies-cards
+    flex-direction: column
+    align-items: center
+
+  .item-card-box
+    width: 90%
+
+  .item-img
+    height: inherit
+    width: auto
+  

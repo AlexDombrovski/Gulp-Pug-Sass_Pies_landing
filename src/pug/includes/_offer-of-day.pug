@@ -1,0 +1,17 @@
+//- Миксин карточки товара
+mixin day-offer(pie, name, structure, price, weight)
+  .day-offer.mix-one
+    img(src=`${pie}`, alt="").mix-one-img
+    .mix-one-description 
+      p.item-name #{name}
+      p.item-structure.mix-structur #{structure}
+      .block-price
+        p.item-price #{price}
+        p.item-weight #{weight}
+
+
+.container-fluid.day-offer-wrapper.hidden
+  .container.day-offer-cont
+    h2.day-offer-title Предложение дня
+    each item in mixOne
+      +day-offer(item.img, item.name, item.structure, item.price, item.weight)

@@ -1,0 +1,75 @@
+html, body
+  overflow-x: hidden
+  
+.container-fluid__wrapper
+  background-color: #fce9b5
+  height: 70px
+
+.navigation
+  padding-right: 0
+  padding-left: 0
+
+.navrow
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+.navbar-brand
+  margin-right: 6rem
+  font-family: 'Liu Jian Mao Cao', cursive
+  font-size: 34px
+  padding-top: 0
+  color: #936147
+
+.navbar-brand:hover
+  color: #f2b12b !important
+
+.nav-link
+  font-family: 'Roboto Mono', monospace
+  color: #936147
+
+.nav-link:hover
+  color: #f2b12b !important
+
+.bg-light
+  background-color: #fce9b5
+
+.header__phone-numbers-ul
+  display: flex
+  flex-direction: column
+  line-height: normal
+
+.header__phone-numbers-item
+  color: #936147
+  font-family: 'Caveat', cursive
+  font-size: 26px
+
+.navbar-collapse
+  position: 
+  z-index: 2
+
+
+
+
+
+@media (max-width: 575.98px)
+  .navbar-brand
+    display: none
+
+  .header__phone-numbers
+    position: absolute
+    top: 20px
+    right: 15px
+    z-index: 2
+
+  .header__phone-numbers-ul
+    line-height: inherit
+    
+  .navbar
+    width: 100%
+    position: absolute
+    top: 10px
+    z-index: 1
+
+  .navbar-collapse
+    

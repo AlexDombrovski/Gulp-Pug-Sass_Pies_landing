@@ -1,0 +1,72 @@
+.first-screen-wrapper
+  padding: 0
+  
+.first-background-img
+  height: 350px
+  background:
+    image: url('../img/allPastries/main-screen.jpg')
+    size: cover
+    repeat: no-repeat
+    position: bottom
+  position: relative
+
+.background
+  //display: none
+  height: 200px
+  background-color: #fce9b5
+  position: relative
+  display: flex
+  justify-content: center
+
+.background-title
+  //display: none
+  width: 600px
+  height: 200px
+  background-color: #936147
+  position: absolute
+  top: -100px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.first-title
+  font-family: 'Roboto Mono', monospace
+  color: #fce9b5
+  font-size: 40px
+  line-height: normal
+
+.first-action-img
+  background-image: url(../img/action1.png)
+  width: 350px
+  height: 298px
+  position: absolute
+  z-index: 1
+
+.first-trigger
+  font-family: 'Russo One', sans-serif
+  font-size: 40px
+  color: #a40765
+
+.link:hover
+    text-decoration: none
+ 
+
+
+
+@media (max-width: 575.98px)
+
+  .background-title
+    width: 90%
+    top: -30px
+
+  .first-title
+    font-size: 30px
+
+  .first-action-img
+    width: 50%
+    z-index: 0
+    left: 20px
+
+  .first-trigger
+    font-size: 25px
+    line-height: 35px

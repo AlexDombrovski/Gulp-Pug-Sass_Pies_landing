@@ -1,0 +1,29 @@
+//- Миксин карточки товара
+mixin item-card(pie, name, structure, price, weight)
+  .item-card-box
+    img(src=`${pie}`, alt="").item-img
+    .item-description 
+      p.item-name #{name}
+      p.item-structure #{structure}
+      .block-price
+        p.item-price #{price}
+        p.item-weight #{weight}
+
+//- Начало компонента
+.container-fluid.pies-wrapper
+  .container.pies-cont
+    h2.pies-title(class="wow fadeInLeftBig" data-wow-delay="0.1s") #{powerTitle}
+    .pies-cards
+      each item, index in powerPies
+          if index < 4
+            +item-card(item.img, item.name, item.structure, item.price, item.weight)
+    .pies-cards-hidden
+      each item, index in powerPies
+          if index >= 4
+            +item-card(item.img, item.name, item.structure, item.price, item.weight)
+    p.show-more Показать все    
+    p.show-more-second-hidden Свернуть
+
+  
+  
+  

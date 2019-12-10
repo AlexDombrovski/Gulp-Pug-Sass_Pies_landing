@@ -1,0 +1,61 @@
+//- миксин описания условий доставки
+mixin delivery-description
+  p.delivery-description Мы работаем без выходных.
+  p.delivery-description Заказы принимаются ежедневно:<br>
+    | c 7:00 до 18:00 в будни,<br>
+    | c 9:00 до 18:00 в выходные.
+  p.delivery-description Доставка осуществляется ежедневно до 18:00.
+
+//- миксин описания адресов
+mixin delivery-adresses
+  p.delivery-description Самовывоз возможен по адресам:
+  p.delivery-description
+    | Новосибирск, ул. Новая, 24,<br>
+    | Новосибирск, Красный проспект, 70,<br>
+    | Новосибирск, ул. 1-я Ельцовка, 1.
+
+//- миксин описания стоимости доставки
+mixin delivery-price
+  p.delivery-price-description
+    | Район Центральный:<br>
+    | - при сумме заказа от 300 р, стоимость доставки: 150 р.<br>
+    | - при сумме заказа от 600 р, доставка Бесплатно.
+  p.delivery-price-description
+    | Район Заельцовский, Калининский, Дзержинский, Железнодорожный:<br>
+    | - при сумме заказа от 500 р, стоимость доставки: 200 р.<br>
+    | - при сумме заказа от 800 р, доставка Бесплатно.
+  p.delivery-price-description
+    | Район Октябрьский:<br>
+    | - при сумме заказа от 500 р, стоимость доставки: 250 р.<br>
+    | - при сумме заказа от 600 р, доставка Бесплатно.
+  p.delivery-price-description
+    | Район Ленинский, Кировский:<br>
+    | - при сумме заказа от 500 р, стоимость доставки: 300 р.<br>
+    | - при сумме заказа от 1 000 р, доставка Бесплатно.
+  p.delivery-price-description
+    | Район Советский, Первомайский, Кольцово, Обь ГЭС, Академгородок:<br>
+    | - при сумме заказа от 700 р, стоимость доставки: 600 р.<br>
+    | - при сумме заказа от 1 500 р, доставка Бесплатно.
+  p.delivery-price-description
+    | г. Бердск:<br>
+    | - при сумме заказа от 700 р, стоимость доставки: 900 р.<br>
+    | - при сумме заказа от 1 700 р, доставка Бесплатно.
+  p.delivery-price-description
+  p.delivery-price-description
+    | Самовывоз из фирменных, либо партнерских точек выдачи — по договоренности. 
+
+//- начало компонента
+.container-fluid.delivery-wrapper
+  .container.delivery-cont
+    .delivery-stickers
+      .delivery-sticker-delivery.active Доставка
+      .delivery-sticker-price Стоимость
+    .delivery-delivery.active
+      .delivery-first
+        +delivery-description
+      .delivery-second
+        +delivery-adresses
+    .delivery-price.hidden
+      .delivery-price-first
+        +delivery-price
+    .delivery-action

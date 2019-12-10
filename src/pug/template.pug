@@ -1,0 +1,48 @@
+include includes/_variables
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+    link(rel="stylesheet", href="css/bootstrap.css")
+    link(rel="stylesheet" href="css/animate.css")
+
+    link(rel="stylesheet" type="text/css" href="css/slick.css")
+    link(rel="stylesheet" type="text/css" href="css/slick-theme.css")
+
+    link(href="https://fonts.googleapis.com/css?family=Caveat:700|Liu+Jian+Mao+Cao|Raleway|Open+Sans+Condensed:300,700|Roboto+Mono:400,500,700|Russo+One&display=swap&subset=cyrillic" rel="stylesheet")
+
+    link(rel="stylesheet", type="text/css" href="css/main.css")
+    title #{myTitle}
+
+  body
+    header
+      block header
+      block first-screen
+      block offer-of-day
+    main
+      block slyder-actions
+      block pies
+      block block-icons
+      block sweet-pies
+      block birthday-action
+      block office-lunch
+      block three-pies-action
+      block sweet-pause
+      block delivery
+      block payment
+      block footer
+
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous")
+    script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+    script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(type="text/javascript" src="js/slick.min.js")
+    script(type="text/javascript" src="js/slyder-actions.js")
+    script(type="text/javascript" src="js/img-config.js")
+    script(src="js/wow.min.js")
+    script new WOW().init();

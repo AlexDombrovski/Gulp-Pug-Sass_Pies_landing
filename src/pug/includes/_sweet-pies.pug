@@ -1,0 +1,16 @@
+//- Миксин карточки товара находится в _pies.pug
+
+.container-fluid.pies-wrapper
+  .container.pies-cont
+    h2.pies-title(class="wow fadeInRightBig" data-wow-delay="0.1s") #{sweetTitle}
+    p.pies-trigger(class="wow fadeInRightBig" data-wow-delay="0.3s") Без слоёного или сдобного теста! Они укладываются в длинные металлические листы слоями (как торт), затем выпекаются, декорируются и нарезаются на вес (любое количество).
+    .sweet-pies-cards
+      each item, index in sweetPies
+          if index < 4
+            +item-card(item.img, item.name, item.structure, item.price, item.weight)
+    .sweet-pies-cards-hidden
+      each item, index in sweetPies
+          if index >= 4
+            +item-card(item.img, item.name, item.structure, item.price, item.weight)
+    p.sweet-show-more Показать все    
+    p.sweet-show-more-second-hidden Свернуть
